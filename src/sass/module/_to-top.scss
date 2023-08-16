@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.to-top{
+  position: fixed;
+  bottom: rem(100);
+  right: rem(10);
+  width: rem(52);
+  height: rem(52);
+  z-index: 1000;
+
+  @include mq('md') {
+    bottom: rem(20);
+    right: rem(20);
+  }
+}
