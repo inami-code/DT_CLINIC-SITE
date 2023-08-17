@@ -2,7 +2,7 @@
 
 .footer-nav {
   padding-top: rem(50);
-  padding-bottom: rem(63);
+  padding-bottom: rem(55);
   background: $light-blue;
   @include mq('md') {
     padding-top: rem(35);
@@ -34,11 +34,14 @@
   font-size: rem(16);
   line-height: 1;
   color: $black;
-  padding: rem(12) 0;
+  padding: rem(12.3) 0;
   display: block;
   // padding-left: rem(16);
   transition: opacity 0.3s;
   margin-left: rem(12);
+  @include mq('md') {
+    padding: rem(12) 0;
+  }
 }
 
 .footer-nav__item-link::before {
