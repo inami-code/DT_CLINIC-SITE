@@ -5,7 +5,7 @@
   position: relative;
   padding-top: rem(13);
   @include mq("md") {
-    padding-top: rem(56);
+    padding-top: rem(58);
   }
 }
 
@@ -13,17 +13,19 @@
 .footer-info__bg-image {
   content: "";
   position: absolute;
-  top: rem(-40);
+  top: rem(-32);
   left: 0;
   width: 100%;
-  height: rem(50);
+  height: rem(32);
   background-image: url("../images/common/footer-deco.png");
-  background-position: center bottom;
-  background-size: cover;
+  background-position: -60px bottom;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
   @include mq('md') {
-    background-size: contain;
-    background-repeat: repeat-x;
     top: rem(-40);
+    height: rem(50);
+    background-position: center bottom;
+    background-size: contain;
   }
 }
 

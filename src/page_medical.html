@@ -26,9 +26,14 @@
       rel="stylesheet"
     />
     <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -268,117 +273,39 @@
     </div>
 
     <main>
-      <div class="about-subpage page-about">
-        <div class="about-subpage__inner inner">
+      <div class="medical-subpage page-medical">
+        <div class="medical-subpage__inner inner">
           <div class="sub-mv">
-            <img src="./assets/images/common/about-title.png" alt="" />
+            <img
+              src="./assets/images/common/medical-title.png"
+              alt="診療案内"
+              width="335"
+              height="188"
+            />
             <div class="sub-mv__title">
-              <h1 class="sub-mv__ja-title">当院について</h1>
-              <div class="sub-mv__en-title">about our clinic</div>
+              <h1 class="sub-mv__ja-title">診療案内</h1>
+              <div class="sub-mv__en-title">medical</div>
             </div>
           </div>
 
           <div class="breadcrumb">
-            <p class="breadcrumb__text"><span class="is-home">ホーム</span> <span>></span><span>当院について</span></p>
+            <p class="breadcrumb__text">
+              <span class="is-home">ホーム</span> <span>></span
+              ><span>診療案内</span>
+            </p>
           </div>
-        </div>
 
-        <div class="about-subpage__title">
-          <h2 class="about-subpage__section-title section-header">
-            ポリシーと特徴
-          </h2>
-        </div>
-        <div class="about-subpage__content policy">
-          <div class="policy__inner inner">
-            <div class="policy__container">
-              <div class="policy__content">
-                <div class="policy__en-title section-subtitle">policy</div>
-                <div class="policy__title">
-                  コミュニケーションから始まる最適な医療提供
-                </div>
-                <div class="policy__text">
-                  <p>
-                    当院ではまず患者様から詳しくお話を伺います。<br />
-                    難しい言葉は使わず、実際に感じている小さな違和感からあらゆる可能性を考え、最適な治療方法をご提案いたします。
-                  </p>
-                  <p>
-                    「どこよりも本音で話せる歯医者さん」を目指し、スタッフ一同、「人間力の向上」にも勤めております。
-                  </p>
-                </div>
-              </div>
-              <div class="policy__image">
-                <img
-                  src="./assets/images/common/about-policy.png"
-                  alt="当院について画像"
-                  width="334"
-                  height="230"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-subpage__content feature">
-          <div class="feature__inner inner">
-            <div class="feature__container">
-              <div class="feature__content">
-                <div class="feature__en-title section-subtitle">feature</div>
-                <div class="feature__title">
-                  「医療技術の追求」と<br />「通いやすさ」
-                </div>
-                <div class="feature__text">
-                  <p>
-                    歯の治療において、小さな違和感は大きなストレスにつながります。私たちは常に快適な歯科医療技術の研究を行っております。<br />
-                    また、「通いやすさ」も医院選びの重要なポイントと考え、2019年のリニューアルを期に更に駅の近くへ場所を移しました。
-                  </p>
-                  <p>
-                    朝から夜までお仕事をされている方のために診療時間を見直し、平日でもご利用いただけるようにいたしました。
-                  </p>
-                </div>
-              </div>
-              <div class="feature__image">
-                <img
-                  src="./assets/images/common/about-feature.png"
-                  alt="当院について画像"
-                  width="334"
-                  height="230"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-subpage__second-title">
-          <h2 class="about-subpage__section-title section-header">
-            院内の様子
-          </h2>
-        </div>
-        <div class="about-subpage__picture">
-          <div class="about-subpage__picture-inner inner">
-          <div class="about-subpage__picture-items">
-            <div class="about-subpage__picture-item">
-              <img src="./assets/images/common/about_1.png" alt="院内の様子画像" width="162" height="162" />
-            </div>
-            <div class="about-subpage__picture-item">
-              <img src="./assets/images/common/about_2.png" alt="院内の様子画像" width="162" height="162" />
-            </div>
-            <div class="about-subpage__picture-item">
-              <img src="./assets/images/common/about_3.png" alt="院内の様子画像" width="162" height="162" />
-            </div>
-            <div class="about-subpage__picture-item">
-              <img src="./assets/images/common/about_4.png" alt="院内の様子画像" width="162" height="162" />
-            </div>
-            <div class="about-subpage__picture-item">
-              <img src="./assets/images/common/about_5.png" alt="院内の様子画像" width="162" height="162" />
-            </div>
-            <div class="about-subpage__picture-item">
-              <img src="./assets/images/common/about_6.png" alt="院内の様子画像" width="162" height="162" />
-            </div>
-          </div>
+
+          
         </div>
       </div>
-      </div>
+
+
+
+
     </main>
 
-    <div class="footer-info top-footer-info">
+    <div class="footer-info page-about__footer-info">
       <div class="footer-info__bg-image"></div>
       <div class="footer-info__inner inner">
         <div class="footer-info__container">
@@ -410,23 +337,13 @@
             <div class="footer-info__btn">
               <div class="footer-info__btn-reservation">
                 <a href="#" class="btn-main btn-main--reservation">
-                  <img
-                    src="./assets/images/common/btn-reservation.svg"
-                    alt="WEB予約"
-                    width="25"
-                    height="15"
-                  />
+                  <div class="btn-main--reservation-image"></div>
                   <p>WEB予約</p>
                 </a>
               </div>
               <div class="footer-info__btn-contact">
                 <a href="#" class="btn-main btn-main--contact">
-                  <img
-                    src="./assets/images/common/icon_contact-active.svg"
-                    alt="お問い合わせ"
-                    width="18"
-                    height="18"
-                  />
+                  <div class="btn-main--contact-image"></div>
                   <p>お問い合わせ</p>
                 </a>
               </div>
@@ -513,12 +430,14 @@
       >
     </footer>
     <div class="to-top">
-      <img
-        src="./assets/images/common/to-top.png"
-        alt="トップに戻る"
-        width="52"
-        height="52"
-      />
+      <a href="#">
+        <img
+          src="./assets/images/common/to-top.png"
+          alt="トップに戻る"
+          width="52"
+          height="52"
+        />
+      </a>
     </div>
 
     <div class="reservation-nav">
@@ -560,5 +479,29 @@
         </div>
       </div>
     </div>
+    <!--
+    <main>
+      <div class="">
+        <a href="#" class="btn-main">当院について</a>
+      </div>
+
+      <div class="">
+        <a href="#" class="btn-main btn-main--arrow">当院について</a>
+      </div>
+
+      <a href="#" class="btn-reservation">
+        <div class="btn-reservation__icon">
+          <img
+            src="./assets/images/common/btn-reservation.svg"
+            alt="予約ボタンアイコン"
+          />
+        </div>
+        <div class="btn-reservation__text">WEB予約<br />はこちら</div>
+      </a>
+
+      <div class="section_header">
+        <h2 class="section-header__title">当院の3つのおすすめ</h2>
+      </div>
+    </main> -->
   </body>
 </html>

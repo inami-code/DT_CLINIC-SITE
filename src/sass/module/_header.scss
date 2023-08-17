@@ -9,7 +9,7 @@
   transition: all 0.3s;
   z-index: 10000;
 
-  @include mq("md") {
+  @media screen and (min-width: 1200px) {
     height: rem(80);
   }
 }
@@ -26,7 +26,7 @@
 }
 
 .header__inner.inner {
-  @include mq("md") {
+  @media screen and (min-width: 1200px) {
     max-width: rem(1280);
     width: 100%;
     padding: 0 rem(40);
@@ -57,7 +57,7 @@
 
 .header__container {
   display: none;
-  @include mq("md") {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     height: inherit;
@@ -65,7 +65,7 @@
 }
 
 .header__drawer {
-  @include mq("md") {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }

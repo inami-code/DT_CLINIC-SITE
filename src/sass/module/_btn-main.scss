@@ -76,11 +76,12 @@
   }
 }
 
-.btn-main--reservation img {
+.btn-main--reservation-image {
   width: rem(25);
   height: rem(18);
-  object-fit: contain;
-  display: inline-block;
+  background-image: url(../images/common/btn-reservation.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   @include mq('md') {
     width: rem(25);
     height: rem(14);
@@ -103,21 +104,28 @@
   }
 }
 
+.btn-main--contact-image {
+  width: rem(18);
+  height: rem(18);
+  background-image: url(../images/common/icon_contact-active.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq('md') {
+    width: rem(24);
+    height: rem(24);
+    transition: background 0.3s;
+  }
+}
+
+
 @media (hover: hover) {
   .btn-main--contact:hover {
     background-color: $main-color;
     color: $white;
   }
-}
 
-.btn-main--contact img {
-  width: rem(18);
-  height: rem(18);
-  object-fit: contain;
-  display: inline-block;
-  @include mq('md') {
-    width: rem(24);
-    height: rem(24);
+  .btn-main--contact:hover .btn-main--contact-image{
+    background-image: url(../images/common/icon_contact-white.svg);
   }
 }
 
