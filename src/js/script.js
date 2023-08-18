@@ -26,17 +26,39 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     autoplay: {
       delay: 3000,
     },
-  
+
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+  });
+
+  const swiper2 = new Swiper('.js-staff-swiper', {
+    loop: true, // ループ有効
+    slidesPerView: 1.85, // 一度に表示する枚数
+    speed: 5000, // ループの時間
+    allowTouchMove: false, // スワイプ無効
+    autoplay: {
+      delay: 0, // 途切れなくループ
+    },
+    spaceBetween: 10,
+    breakpoints: {
+      // スライドの表示枚数：768px以上の場合
+      768: {
+        slidesPerView: 3,
+      },
+      // スライドの表示枚数：1025px以上の場合
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
     },
   });
 

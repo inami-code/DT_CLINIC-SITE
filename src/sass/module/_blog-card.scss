@@ -43,8 +43,8 @@
 }
 
 .blog-card__image-wrap{
+  overflow: hidden;
   @include mq('md') {
-    overflow: hidden;
     border-radius: rem(20) rem(20) 0 0;
   }
 }
@@ -62,16 +62,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  @include mq('md') {
     transition: transform .6s;
-  }
 }
 
-@media (hover:hover){
   .blog-card:hover .blog-card__image img{
     transform: scale(1.1);
   }
-}
+
 
 .blog-card__body {
   position: relative;
