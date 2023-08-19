@@ -1,27 +1,27 @@
 @use 'global' as *;
 
-.staff-sub-page__greeting{
+.page-staff__greeting{
   margin-top: rem(60);
   @include mq('md') {
     margin-top: rem(84);
   }
 }
 
-.staff-sub-page__footer-info{
+.page-staff__footer-info{
   margin-top: rem(128);
   @include mq('md') {
     margin-top: rem(180);
   }
 }
 
-.staff-sub-page__slide {
+.page-staff__slide {
   margin-top: rem(98);
   @include mq('md') {
     margin-top: rem(160);
   }
 }
 
-.staff-sub-page__introduction{
+.page-staff__introduction{
 margin-top: rem(100);
 @include mq('md') {
 margin-top: rem(165);

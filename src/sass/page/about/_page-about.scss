@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.about-subpage__title {
+.page-about__title {
   text-align: center;
   margin-top: rem(65);
   @include mq("md") {
@@ -8,7 +8,7 @@
   }
 }
 
-.about-subpage__second-title{
+.page-about__second-title{
   text-align: center;
   margin-top: rem(100);
   @include mq('md') {
@@ -17,14 +17,14 @@
 }
 
 
-.about-subpage__picture {
+.page-about__picture {
   margin-top: rem(38);
   @include mq("md") {
     margin-top: rem(60);
   }
 }
 
-.about-subpage__picture-items {
+.page-about__picture-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -39,11 +39,11 @@
   }
 }
 
-.about-subpage__picture-item {
+.page-about__picture-item {
   aspect-ratio: 162 / 162;
 }
 
-.about-subpage__picture-item img {
+.page-about__picture-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -51,7 +51,7 @@
 }
 
 
-.about-subpage__footer-info{
+.page-about__footer-info{
   margin-top: rem(130);
   @include mq('md') {
     margin-top: rem(184);
