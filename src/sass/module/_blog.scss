@@ -16,15 +16,6 @@
 }
 
 
-.blog__items.archive-cards{
-  @include mq("md") {
-    display: flex;
-    grid-template-columns: none;
-    gap: rem(55) rem(50);
-    margin-top: rem(80);
-  }
-}
-
 .blog__btn {
   text-align: center;
   margin-top: rem(40);
