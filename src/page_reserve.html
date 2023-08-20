@@ -272,7 +272,7 @@
       </a>
     </div>
 
-    <div class="page-contact page-title">
+    <div class="page-reserve page-title">
       <div class="page-title__inner inner">
         <div class="page-title__top sub-mv">
           <picture>
@@ -292,15 +292,15 @@
             />
           </picture>
           <div class="sub-mv__title">
-            <h1 class="sub-mv__ja-title">お問い合わせ</h1>
-            <div class="sub-mv__en-title">contact</div>
+            <h1 class="sub-mv__ja-title">WEB予約</h1>
+            <div class="sub-mv__en-title">reserve</div>
           </div>
         </div>
 
-        <div class="page-contact__breadcrumb breadcrumb">
+        <div class="page-reserve__breadcrumb breadcrumb">
           <p class="breadcrumb__text">
             <span class="is-home">ホーム</span> <span>></span
-            ><span>お問い合わせ</span>
+            ><span>WEB予約</span>
           </p>
         </div>
       </div>
@@ -308,31 +308,67 @@
     </div>
 
     <main>
-      <div class="page-contact__content">
-        <div class="page-contact__inner inner">
-          <p class="page-contact__attention">
-            お急ぎの方は、お電話(TEL 03-1234-5678)での連絡がスムーズです。<br />
-            以下のフォームからお問い合わせ頂いた場合、ご連絡が2～3日後になる場合がございます。<br />
-            また、メールアドレスの入力間違いにより送信できない事が発生しておりますので、メールアドレスは正しくご入力下さい。<br />
-            <span
-              >※3営業日以内に当院からの返信がない場合には、お電話(TEL
-              03-1234-5678)にてお問い合わせ下さい。</span
-            >
-          </p>
-          <!-- /.page-contact__attention -->
-
-          <div class="page-contact__title">
-            <h2 class="page-contact__section-title section-header">
-              お問い合わせ<br class="u-mobile">フォーム
-            </h2>
-            <!-- /.page-contact__section-title section-header -->
+      <div class="page-reserve__content">
+        <div class="page-reserve__inner inner">
+          <div class="page-reserve__info-tel">
+            <h2 class="page-reserve__info-title">お電話でのご予約/ご相談</h2>
+            <!-- /.page-reserve__info-title -->
+            <div class="page-reserve__tel">
+              <div class="page-reserve__tel-container">
+                <div class="page-reserve__tel-icon">
+                  <img
+                    src="./assets/images/common/icon_tel.svg"
+                    alt="TELアイコン"
+                    width="28"
+                    height="28"
+                  />
+                </div>
+                <!-- /.page-reserve__tel-icon -->
+                <div class="page-reserve__tel-number">03-1234-5678</div>
+                <!-- /.page-reserve__tel-number -->
+              </div>
+              <!-- /.page-reserve__tel-container -->
+              <div class="page-reserve__opening-hours">
+                (年中無休 AM9:00〜PM22:00)
+              </div>
+              <!-- /.page-reserve__open-hour -->
+            </div>
+            <!-- /.page-reserve__tel -->
+            <div class="page-reserve__text">
+              お急ぎの方は電話での連絡がスムーズです。<br />
+              混雑状況によっては当日受診をご利用いただけない場合がございます。<br />
+              あらかじめご了承ください。
+            </div>
+            <!-- /.page-reserve__text -->
           </div>
-          <!-- /.page-contact__title -->
-          <form action="" class="page-contact__form form" method="post">
+          <!-- /.page-reserve__info-tel -->
+          <div class="page-reserve__info-email">
+            <h2 class="page-reserve__info-title">メールでのご予約/ご相談</h2>
+            <!-- /.page-reserve__info-title -->
+            <div class="page-reserve__text">
+              【ご予約に関しての注意点】<br />
+              メールアドレスの入力間違いにより送信できない事が発生しておりますので、メールアドレスは正しくご入力下さい。<br />
+              ※24時間以内に当院からの返信がない場合には、お電話(TEL
+              03-1234-5678)にてお問い合わせ下さい。
+            </div>
+            <!-- /.page-reserve__text -->
+          </div>
+          <!-- /.page-reserve__info-tel -->
+
+          <div class="page-reserve__title">
+            <h2 class="page-reserve__section-title section-header">
+              予約フォーム
+            </h2>
+            <!-- /.page-reserve__section-title section-header -->
+          </div>
+          <!-- /.page-reserve__title -->
+          <form action="" class="page-reserve__form form" method="post">
             <dl class="form__list">
               <div class="form__item">
                 <dt class="form__item-title">
-                  <label for="your-name" class="form__item-label is-required">お名前</label>
+                  <label for="your-name" class="form__item-label is-required"
+                    >お名前</label
+                  >
                 </dt>
                 <!-- /.form__item-title -->
                 <dd class="form__item-input">
@@ -346,9 +382,12 @@
                 </dd>
                 <!-- /.form__item-input -->
               </div>
+              <!-- /.form__item -->
               <div class="form__item">
                 <dt class="form__item-title">
-                  <label for="your-ruby" class="form__item-label is-required">フリガナ</label>
+                  <label for="your-ruby" class="form__item-label is-required"
+                    >フリガナ</label
+                  >
                 </dt>
                 <!-- /.form__item-title -->
                 <dd class="form__item-input">
@@ -362,9 +401,12 @@
                 </dd>
                 <!-- /.form__item-input -->
               </div>
+              <!-- /.form__item -->
               <div class="form__item">
                 <dt class="form__item-title">
-                  <label for="your-tel" class="form__item-label is-required">電話番号</label>
+                  <label for="your-tel" class="form__item-label is-required"
+                    >電話番号</label
+                  >
                 </dt>
                 <!-- /.form__item-title -->
                 <dd class="form__item-input">
@@ -378,6 +420,7 @@
                 </dd>
                 <!-- /.form__item-input -->
               </div>
+              <!-- /.form__item -->
               <div class="form__item">
                 <dt class="form__item-title">
                   <label for="your-email" class="form__item-label is-required"
@@ -396,9 +439,232 @@
                 </dd>
                 <!-- /.form__item-input -->
               </div>
+              <!-- /.form__item -->
+
+              <div class="form__item form__item--radio">
+                <dt class="form__item-title">
+                <label class="form__item-label is-required">初診/再診</label>
+              </dt>
+                <!-- /.form__item-title -->
+                <dd class="form__item-input form__item-input--radio">
+                  <label for="your-initial" class="form__item-radio">
+                    <input
+                      id="your-initial"
+                      type="radio"
+                      name="your-radio"
+                      class="form__item-radio-input"
+                      required
+                      checked
+                    /><span class="form__item-radio-part">初診</span>
+                  </label>
+                  <label for="your-repeat" class="form__item-radio">
+                    <input
+                      id="your-repeat"
+                      type="radio"
+                      name="your-radio"
+                      class="form__item-radio-input"
+                      required
+                    /><span
+                      class="form__item-radio-part form__item-radio-part--right"
+                      >再診</span
+                    >
+                  </label>
+                </dd>
+                <!-- /.form__item-input -->
+              </div>
+              <!-- /.form__item -->
+
+              <div class="form__item form__item--checkbox">
+                <dt class="form__item-title">
+                  <p class="form__item-label form__item-label--visit is-required">診療内容</p>
+                  <p class="form__item-label-attention">※(複数選択可)</p>
+                </dt>
+                <!-- /.form__item-title -->
+                <dd class="form__item-input form__item-input--checkbox">
+                  <div class="form__checkbox">
+                    <label for="your-content1" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content1"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part">虫歯</span></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content2" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content2"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >被せ物がとれた</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content3" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content3"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >矯正歯科</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content4" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content4"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >咬み合わせ</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content5" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content5"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >歯周病</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content6" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content6"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >小児歯科</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content7" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content7"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >入れ歯</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content8" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content8"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >インプラント</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                  <div class="form__checkbox">
+                    <label for="your-content9" class="form__checkbox-label">
+                      <input
+                        type="checkbox"
+                        name="your-content"
+                        id="your-content9"
+                        class="form__checkbox-input"
+                      />
+                      <span class="form__item-checkbox-part"
+                        >その他</span
+                      ></label
+                    >
+                  </div>
+                  <!-- /.form__checkbox -->
+                </dd>
+                <!-- /.form__item-input -->
+              </div>
+              <!-- /.form__item -->
+
               <div class="form__item">
                 <dt class="form__item-title">
-                  <label for="your-message" class="form__item-label is-required"
+                  <label for="your-method" class="form__item-label is-required"
+                    >ご連絡方法</label
+                  >
+                </dt>
+                <!-- /.form__item-title -->
+                <dd class="form__item-input">
+                  <select
+                    name="your-method"
+                    id="your-method"
+                    class="form__method"
+                  >
+                    <option value="">メール</option>
+                    <option value="">メール1</option>
+                    <option value="">メール2</option></select
+                  ><!-- /# -->
+                </dd>
+                <!-- /.form__item-input -->
+              </div>
+              <!-- /.form__item -->
+
+              <div class="form__item">
+                <dt class="form__item-title">
+                  <label for="your-date" class="form__item-label">希望日</label>
+                </dt>
+                <!-- /.form__item-title -->
+                <dd class="form__item-input">
+                  <input
+                    type="date"
+                    name="your-date"
+                    id="your-date"
+                    class="form__date"
+                  />
+                  <input
+                    type="date"
+                    name="your-date"
+                    id="your-date"
+                    class="form__date"
+                  />
+                  <input
+                    type="date"
+                    name="your-date"
+                    id="your-date"
+                    class="form__date"
+                  />
+                  
+                </dd>
+                <!-- /.form__item-input -->
+              </div>
+              <!-- /.form__item -->
+
+              <div class="form__item">
+                <dt class="form__item-title">
+                  <label for="your-message" class="form__item-label"
                     >お問い合わせ内容</label
                   >
                 </dt>
@@ -410,25 +676,28 @@
                     id="your-message"
                     placeholder="ご自由にご記入ください。"
                     required
-                  ></textarea
-                  >
+                  ></textarea>
                 </dd>
                 <!-- /.form__item-input -->
               </div>
+              <!-- /.form__item -->
             </dl>
             <!-- /.form__list -->
             <div class="form__submit">
-              <button class="btn-main btn-main--form" type="submit">送　信</button><!-- /.btn-main -->
-            </div><!-- /.form__submit -->
+              <button class="btn-main btn-main--form" type="submit">
+                送　信</button
+              ><!-- /.btn-main -->
+            </div>
+            <!-- /.form__submit -->
           </form>
-          <!-- /.page-contact__form -->
+          <!-- /.page-reserve__form -->
         </div>
-        <!-- /.page-contact__inner inner -->
+        <!-- /.page-reserve__inner inner -->
       </div>
-      <!-- /.page-contact__content -->
+      <!-- /.page-reserve__content -->
     </main>
 
-    <div class="page-contact__footer-info footer-info">
+    <div class="page-reserve__footer-info footer-info">
       <div class="footer-info__bg-image"></div>
       <div class="footer-info__inner inner">
         <div class="footer-info__container">
