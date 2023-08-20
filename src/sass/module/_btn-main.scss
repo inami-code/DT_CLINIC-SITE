@@ -133,3 +133,12 @@
   margin-left: rem(8);
   white-space: nowrap;
 }
+
+
+.btn-main--form{
+  padding: rem(12) rem(116);
+  @include mq('md') {
+    font-size: rem(16);
+    padding: rem(19) rem(155);
+  }
+}

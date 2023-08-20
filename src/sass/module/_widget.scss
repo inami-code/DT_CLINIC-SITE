@@ -111,7 +111,7 @@
 
 
 .widget__cards:not(:first-child){
-  margin-top: rem(17);
+  margin-top: rem(20);
   @include mq('md') {
     margin-top: rem(6);
   }

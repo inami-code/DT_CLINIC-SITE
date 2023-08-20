@@ -1,0 +1,136 @@
+@use "global" as *;
+
+.page-contact__content {
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.page-contact__inner.inner{
+  @include mq('md') {
+    max-width: rem(778);
+  }
+}
+
+.page-contact__attention {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  color: $black;
+}
+
+.page-contact__attention span {
+  color: $accent-color;
+}
+
+.page-contact__title {
+  text-align: center;
+  margin-top: rem(98);
+  @include mq('md') {
+    margin-top: rem(155);
+  }
+}
+
+
+.page-contact__form {
+  margin-top: rem(66);
+  @include mq('md') {
+    margin-top: rem(70);
+  }
+}
+
+
+.page-contact__item {
+  padding: rem(20) 0;
+  border-top: 1px solid #DDD;
+  @include mq('md') {
+    display: flex;
+    align-items: center;
+    padding: rem(27) 0;
+  }
+}
+
+.page-contact__item:last-child{
+  border-bottom: 1px solid #DDD;
+}
+
+.page-contact__item-title{
+  @include mq('md') {
+    flex:0 0 rem(240);
+  }
+}
+
+.page-contact__item-label {
+  font-size: rem(16);
+  line-height: calc(36 / 16);
+  color: $black;
+  position: relative;
+  display: inline-block;
+}
+
+.page-contact__item-label::after{
+  content: "必須";
+  color: $white;
+  font-size: rem(12);
+  background-color: $accent-color;
+  border-radius: rem(4);
+  padding: 0 rem(6);
+  position: absolute;
+  top: 50%;
+  right: rem(-12);
+  transform: translate(100%,-50%);
+  @include mq('md') {
+    right: rem(-15);
+    top: 53%;
+  }
+}
+
+
+.page-contact__item-input input[type="text"],
+.page-contact__item-input input[type="email"],
+.page-contact__item-input input[type="tel"],
+.page-contact__item-input textarea{
+  width: 100%;
+  display: block;
+  border-radius: rem(4);
+  background-color: #F6F6F6;
+  padding: rem(13) rem(16);
+  color: $black;
+}
+
+.page-contact__item-input textarea{
+height: rem(160);
+@include mq('md') {
+  height: rem(200);
+}
+}
+
+.page-contact__item-input input::placeholder,.page-contact__item-input textarea::placeholder{
+  font-size: rem(16);
+  color: #C2C2C2;
+}
+
+
+.page-contact__item-input{
+  margin-top: rem(8);
+  @include mq('md') {
+    margin-top: 0;
+    flex: 1 0 auto;
+  }
+}
+
+.page-contact__submit {
+  margin-top: rem(70);
+  text-align: center;
+@include mq('md') {
+  margin-top: rem(75);
+}
+}
+
+
+.page-contact__footer-info{
+  margin-top: rem(128);
+  @include mq('md') {
+    margin-top: rem(180);
+  }
+}

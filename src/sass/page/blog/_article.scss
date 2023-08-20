@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.article {
-}
-
 .article__headline {
   font-size: rem(20);
   letter-spacing: 0.08em;
@@ -49,13 +46,16 @@
   background-color: $main-color;
   border-radius: rem(12);
   margin-left: rem(32);
+  @include mq('md') {
+    padding: rem(8) rem(12);
+  }
 }
 
 .article__text {
   font-size: rem(14);
   line-height: calc(24 / 14);
   color: $black;
-  margin-top: rem(60);
+  margin-top: rem(58);
 }
 
 .article__text a{
@@ -73,20 +73,30 @@ margin-top: rem(20);
   letter-spacing: 0.08em;
   line-height: calc(32 / 18);
   font-weight: $bold;
-  padding-left: rem(18);
+  padding-left: rem(22);
   color: $main-color;
   position: relative;
-  margin-top: rem(60);
+  margin-top: rem(62);
+  @include mq('md') {
+    font-size: rem(24);
+    margin-top: rem(66);
+    padding-left: rem(28);
+  }
 }
 
 .article__headline2::after{
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   width: rem(6);
-  height: 100%;
+  height: rem(40);
   background-color: $main-color;
+  @include mq('md') {
+    width: rem(8);
+    height: rem(52);
+  }
 }
 
 .article__image {
@@ -107,13 +117,19 @@ margin-top: rem(20);
   line-height: calc(32 / 16);
   font-weight: $bold;
   color: $main-color;
-  margin-top: rem(40);
+  margin-top: rem(35);
   border-bottom: 1px solid $main-color;
-  padding-bottom: rem(5);
+  @include mq('md') {
+    font-size: rem(20);
+    margin-top: rem(33);
+  }
 }
 
 .article__text.article__text--2 {
   margin-top: rem(18);
+  @include mq('md') {
+    margin-top: rem(14);
+  }
 }
 
 .article__headline4 {
@@ -122,15 +138,20 @@ margin-top: rem(20);
   line-height: calc(32 / 14);
   font-weight: $bold;
   color: $main-color;
-  margin-top: rem(60);
+  margin-top: rem(50);
+  margin-bottom: 0;
+  @include mq('md') {
+    font-size: rem(16);
+  }
 }
 
 .article__text.article__text--3 {
-  margin-top: rem(16);
+  margin-top: rem(8);
 }
 
 .article__lists {
-  margin-top: rem(20);
+  margin-top: rem(11);
+  margin-left: rem(14);
 }
 
 .article__list {
@@ -140,5 +161,10 @@ margin-top: rem(20);
 }
 
 .article__list:not(:first-child){
-  margin-top: rem(12);
+  margin-top: rem(4);
+}
+
+
+.article__pagination{
+  height: rem(76);
 }
